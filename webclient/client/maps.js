@@ -18,6 +18,8 @@ function changePosition( Lat, Long ) {
     map: appMap,
   });
 
+  // appMarkers.push(marker);
+
   appMap.setZoom(16);
   appMap.setCenter(newPosition);
 }
@@ -49,7 +51,25 @@ $(document).ready( function() {
   }
   google.maps.event.addDomListener(window, 'load', initialize);
 
-  
+  Pusher.log = function(message) {
+    if (window.console && window.console.log) {
+      window.console.log(message);
+    }
+  };
+
+  var pusher = new Pusher('f340e74bee71beefe7a1');
+  // public
+  // Depois que tiver user.account, transformar no canal do cliente, ex:
+  // ID Cliente: 575
+  // Chave Publica: ahdsga187261767da6
+  // ID do Canal: MD5 ou Hash (ID do cliente com Chave Publica)
+  var channel = pusher.subscribe('public');
+  channel.bind('setPosition', function(data) {
+    console.log(data);
+    // data.long
+    // data.lat
+    // changePosition( data.long, data.lat );
+  }); 
 
   // center = new google.maps.LatLng(-34.397, 150.644)
 });

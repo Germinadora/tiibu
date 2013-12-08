@@ -1,4 +1,3 @@
-
 // Load the TCP Library
 net = require('net');
  
@@ -81,21 +80,6 @@ net.createServer(function (socket) {
 
 
         //console.log(info); 
-    
-         
   }
-
-
-
-
   });
- 
-  
-     
-
 }).listen(9400);
- 
-
-console.log("Chat server running at port 9400\n");
-
-

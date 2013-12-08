@@ -20,6 +20,16 @@
     "express": "~3.4.6",
     "logfmt": "~0.17.0",
     "jade": "~0.35.0",
-    "hamljs": "~0.6.1"
+    "hamljs": "~0.6.1",
+    "merge-js": "~1.1.0",
+    "ejs": "~0.8.5",
+    "connect-assetmanager": "0.0.28",
+    "node-sass": "~0.7.0",
+    "less-middleware": "~0.1.14",
+    "connect-assets": "~2.5.3",
+    "eco": "~1.1.0-rc-3",
+    "coffee-script": "~1.6.3",
+    "stylus": "~0.41.0",
+    "nib": "~1.0.1"
   }
 }
