@@ -69,6 +69,7 @@ $(document).ready( function() {
     // data.long
     // data.lat
     // changePosition( data.long, data.lat );
+    changePosition( data.latitude, longitude );
   }); 
 
   // center = new google.maps.LatLng(-34.397, 150.644)
