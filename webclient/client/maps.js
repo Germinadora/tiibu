@@ -66,8 +66,6 @@ $(document).ready( function() {
   var channel = pusher.subscribe('public');
   channel.bind('setPosition', function(data) {
     console.log(data);
-    data = JSON.parse(data);
-    console.log(data);
     // data.long
     // data.lat
     // changePosition( data.long, data.lat );
