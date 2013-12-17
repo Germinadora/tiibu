@@ -3,7 +3,7 @@ net = require('net');
  
 // Keep track of the chat clients
 var clients = [];
-var debug = 0;  // 1 Modo Debug ON / 0 Modo Debug OFF
+var debug = 1;  // 1 Modo Debug ON / 0 Modo Debug OFF
 
 
 // Start a TCP Server
